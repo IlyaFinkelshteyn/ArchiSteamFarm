@@ -46,7 +46,7 @@ before_build:
     
     nuget update -self
 
-    dotnet restore
+    nuget restore
 build_script:
 - ps: >-
     Set-StrictMode -Version Latest
