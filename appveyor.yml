@@ -43,6 +43,8 @@ before_build:
     $ProgressPreference = 'SilentlyContinue'
 
     dotnet --info
+    
+    nuget update -self
 
     dotnet restore
 build_script:
